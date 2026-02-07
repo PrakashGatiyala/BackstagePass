@@ -11,6 +11,8 @@ const days = [
   { label: "Day - 9", locked: true, completed: false },
 ];
 
+import { getImagePath } from '../utils/imageUtils';
+
 export default function Sidebar() {
   return (
     <aside
@@ -106,7 +108,7 @@ export default function Sidebar() {
                 )}
                 {day.locked && (
                   <img
-                    src="/light/Page/LockSimple.svg"
+                    src={getImagePath('/light/Page/LockSimple.svg')}
                     alt="Locked"
                     style={{ width: "20px", height: "20px" }}
                   />

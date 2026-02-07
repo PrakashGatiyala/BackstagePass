@@ -1,3 +1,5 @@
+import { getImagePath } from '../utils/imageUtils';
+
 export default function Header() {
   return (
     <header
@@ -18,7 +20,7 @@ export default function Header() {
         style={{ height: "24px", gap: "9.6px" }}
       >
         <img
-          src="/light/Header/logo.png"
+          src={getImagePath('/light/Header/logo.png')}
           alt="BackstagePass logo icon"
           style={{ height: "24px", width: "auto" }}
         />
@@ -52,7 +54,7 @@ export default function Header() {
           }}
         >
           <img
-            src="/light/Header/streak.png"
+            src={getImagePath('/light/Header/streak.png')}
             alt="Streak"
             style={{ width: "auto", height: "18px" }}
           />
@@ -66,7 +68,7 @@ export default function Header() {
 
         {/* Notification Bell */}
         <img
-          src="/light/Header/notification.png"
+          src={getImagePath('/light/Header/notification.png')}
           alt="Notifications"
           style={{ height: "32px", width: "auto" }}
           className="cursor-pointer"
@@ -74,7 +76,7 @@ export default function Header() {
 
         {/* User Avatar */}
         <img
-          src="/light/Header/Avatar.png"
+          src={getImagePath('/light/Header/Avatar.png')}
           alt="User avatar"
           className="rounded-full object-cover"
           style={{ height: "32px", width: "32px" }}

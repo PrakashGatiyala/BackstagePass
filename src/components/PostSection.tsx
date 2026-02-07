@@ -1,3 +1,5 @@
+import { getImagePath } from '../utils/imageUtils';
+
 export default function PostSection() {
   return (
     <main
@@ -24,7 +26,7 @@ export default function PostSection() {
             width: "100%",
             height: "98px",
             borderRadius: "24px 24px 0 0",
-            backgroundImage: "url('/light/Page/Submission_BG.png')",
+            backgroundImage: `url('${getImagePath('/light/Page/Submission_BG.png')}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
@@ -72,7 +74,7 @@ export default function PostSection() {
           >
             {/* Profile avatar — 48x48 rounded */}
             <img
-              src="/light/Page/Post_Avatar.png"
+              src={getImagePath('/light/Page/Post_Avatar.png')}
               alt="Ashraf Idrishi"
               style={{
                 width: "48px",
@@ -173,7 +175,7 @@ export default function PostSection() {
             }}
           >
             <img
-              src="/light/Page/Post_Video_thumbnail.svg"
+              src={getImagePath('/light/Page/Post_Video_thumbnail.svg')}
               alt="Post video thumbnail"
               style={{
                 width: "640px",
@@ -217,12 +219,12 @@ export default function PostSection() {
                 }}
               >
                 <img
-                  src="/light/Page/Reaction/highfive_emojii.png"
+                  src={getImagePath('/light/Page/Reaction/highfive_emojii.png')}
                   alt="highfive"
                   style={{ width: "20px", height: "20px" }}
                 />
                 <img
-                  src="/light/Page/Reaction/eyeswithLove_emojii.png"
+                  src={getImagePath('/light/Page/Reaction/eyeswithLove_emojii.png')}
                   alt="love"
                   style={{ width: "20px", height: "20px" }}
                 />
@@ -251,7 +253,7 @@ export default function PostSection() {
                 }}
               >
                 <img
-                  src="/light/Page/Reaction/face_dummy_icon.png"
+                  src={getImagePath('/light/Page/Reaction/face_dummy_icon.png')}
                   alt="react"
                   style={{ width: "20px", height: "20px" }}
                 />
@@ -270,7 +272,7 @@ export default function PostSection() {
                 }}
               >
                 <img
-                  src="/light/Page/Reaction/comment_icon.png"
+                  src={getImagePath('/light/Page/Reaction/comment_icon.png')}
                   alt="comment"
                   style={{ width: "20px", height: "20px" }}
                 />

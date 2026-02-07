@@ -1,3 +1,5 @@
+import { getImagePath } from '../utils/imageUtils';
+
 export default function SubHeader() {
   return (
     <div
@@ -101,7 +103,7 @@ export default function SubHeader() {
 
         {/* Info icon */}
         <img
-          src="/light/Page/Info.png"
+          src={getImagePath('/light/Page/Info.png')}
           alt="Info"
           style={{ width: "24px", height: "24px" }}
           className="cursor-pointer"
